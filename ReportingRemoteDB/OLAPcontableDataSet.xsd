@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OLAPcontableDataSet" targetNamespace="http://tempuri.org/OLAPcontableDataSet.xsd" xmlns:mstns="http://tempuri.org/OLAPcontableDataSet.xsd" xmlns="http://tempuri.org/OLAPcontableDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BASCSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BASCSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ReportingRemoteDB.Properties.Settings.GlobalReference.Default.BASCSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OLAP_CONTABLETableAdapter" GeneratorDataComponentClassName="OLAP_CONTABLETableAdapter" Name="OLAP_CONTABLE" UserDataComponentName="OLAP_CONTABLETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASCSConnectionString (Settings)" DbObjectName="BASCS.dbo.OLAP_CONTABLE" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT codemp, codsuc, Cuenta, codcen, codcenb, nrosdb, Tipoasi, fecha, fecval, Subcuenta, NombreSubcuenta, Cantidad, debe, debe2, Haber, Haber2, Importe, Importe2 FROM dbo.OLAP_CONTABLE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codemp" DataSetColumn="codemp" />
+              <Mapping SourceColumn="codsuc" DataSetColumn="codsuc" />
+              <Mapping SourceColumn="Cuenta" DataSetColumn="Cuenta" />
+              <Mapping SourceColumn="codcen" DataSetColumn="codcen" />
+              <Mapping SourceColumn="codcenb" DataSetColumn="codcenb" />
+              <Mapping SourceColumn="nrosdb" DataSetColumn="nrosdb" />
+              <Mapping SourceColumn="Tipoasi" DataSetColumn="Tipoasi" />
+              <Mapping SourceColumn="fecha" DataSetColumn="fecha" />
+              <Mapping SourceColumn="fecval" DataSetColumn="fecval" />
+              <Mapping SourceColumn="Subcuenta" DataSetColumn="Subcuenta" />
+              <Mapping SourceColumn="NombreSubcuenta" DataSetColumn="NombreSubcuenta" />
+              <Mapping SourceColumn="Cantidad" DataSetColumn="Cantidad" />
+              <Mapping SourceColumn="debe" DataSetColumn="debe" />
+              <Mapping SourceColumn="debe2" DataSetColumn="debe2" />
+              <Mapping SourceColumn="Haber" DataSetColumn="Haber" />
+              <Mapping SourceColumn="Haber2" DataSetColumn="Haber2" />
+              <Mapping SourceColumn="Importe" DataSetColumn="Importe" />
+              <Mapping SourceColumn="Importe2" DataSetColumn="Importe2" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OLAPcontableDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OLAPcontableDataSet" msprop:Generator_UserDSName="OLAPcontableDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OLAP_CONTABLE" msprop:Generator_TableClassName="OLAP_CONTABLEDataTable" msprop:Generator_TableVarName="tableOLAP_CONTABLE" msprop:Generator_TablePropName="OLAP_CONTABLE" msprop:Generator_RowDeletingName="OLAP_CONTABLERowDeleting" msprop:Generator_RowChangingName="OLAP_CONTABLERowChanging" msprop:Generator_RowEvHandlerName="OLAP_CONTABLERowChangeEventHandler" msprop:Generator_RowDeletedName="OLAP_CONTABLERowDeleted" msprop:Generator_UserTableName="OLAP_CONTABLE" msprop:Generator_RowChangedName="OLAP_CONTABLERowChanged" msprop:Generator_RowEvArgName="OLAP_CONTABLERowChangeEvent" msprop:Generator_RowClassName="OLAP_CONTABLERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codemp" msprop:Generator_ColumnVarNameInTable="columncodemp" msprop:Generator_ColumnPropNameInRow="codemp" msprop:Generator_ColumnPropNameInTable="codempColumn" msprop:Generator_UserColumnName="codemp" type="xs:short" />
+              <xs:element name="codsuc" msprop:Generator_ColumnVarNameInTable="columncodsuc" msprop:Generator_ColumnPropNameInRow="codsuc" msprop:Generator_ColumnPropNameInTable="codsucColumn" msprop:Generator_UserColumnName="codsuc" type="xs:short" />
+              <xs:element name="Cuenta" msprop:Generator_ColumnVarNameInTable="columnCuenta" msprop:Generator_ColumnPropNameInRow="Cuenta" msprop:Generator_ColumnPropNameInTable="CuentaColumn" msprop:Generator_UserColumnName="Cuenta" type="xs:int" />
+              <xs:element name="codcen" msprop:Generator_ColumnVarNameInTable="columncodcen" msprop:Generator_ColumnPropNameInRow="codcen" msprop:Generator_ColumnPropNameInTable="codcenColumn" msprop:Generator_UserColumnName="codcen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="codcenb" msprop:Generator_ColumnVarNameInTable="columncodcenb" msprop:Generator_ColumnPropNameInRow="codcenb" msprop:Generator_ColumnPropNameInTable="codcenbColumn" msprop:Generator_UserColumnName="codcenb" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nrosdb" msprop:Generator_ColumnVarNameInTable="columnnrosdb" msprop:Generator_ColumnPropNameInRow="nrosdb" msprop:Generator_ColumnPropNameInTable="nrosdbColumn" msprop:Generator_UserColumnName="nrosdb" type="xs:short" minOccurs="0" />
+              <xs:element name="Tipoasi" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTipoasi" msprop:Generator_ColumnPropNameInRow="Tipoasi" msprop:Generator_ColumnPropNameInTable="TipoasiColumn" msprop:Generator_UserColumnName="Tipoasi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" />
+              <xs:element name="fecval" msprop:Generator_ColumnVarNameInTable="columnfecval" msprop:Generator_ColumnPropNameInRow="fecval" msprop:Generator_ColumnPropNameInTable="fecvalColumn" msprop:Generator_UserColumnName="fecval" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Subcuenta" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSubcuenta" msprop:Generator_ColumnPropNameInRow="Subcuenta" msprop:Generator_ColumnPropNameInTable="SubcuentaColumn" msprop:Generator_UserColumnName="Subcuenta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreSubcuenta" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNombreSubcuenta" msprop:Generator_ColumnPropNameInRow="NombreSubcuenta" msprop:Generator_ColumnPropNameInTable="NombreSubcuentaColumn" msprop:Generator_UserColumnName="NombreSubcuenta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cantidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="debe" msprop:Generator_ColumnVarNameInTable="columndebe" msprop:Generator_ColumnPropNameInRow="debe" msprop:Generator_ColumnPropNameInTable="debeColumn" msprop:Generator_UserColumnName="debe" type="xs:decimal" />
+              <xs:element name="debe2" msprop:Generator_ColumnVarNameInTable="columndebe2" msprop:Generator_ColumnPropNameInRow="debe2" msprop:Generator_ColumnPropNameInTable="debe2Column" msprop:Generator_UserColumnName="debe2" type="xs:decimal" />
+              <xs:element name="Haber" msprop:Generator_ColumnVarNameInTable="columnHaber" msprop:Generator_ColumnPropNameInRow="Haber" msprop:Generator_ColumnPropNameInTable="HaberColumn" msprop:Generator_UserColumnName="Haber" type="xs:decimal" />
+              <xs:element name="Haber2" msprop:Generator_ColumnVarNameInTable="columnHaber2" msprop:Generator_ColumnPropNameInRow="Haber2" msprop:Generator_ColumnPropNameInTable="Haber2Column" msprop:Generator_UserColumnName="Haber2" type="xs:decimal" />
+              <xs:element name="Importe" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnImporte" msprop:Generator_ColumnPropNameInRow="Importe" msprop:Generator_ColumnPropNameInTable="ImporteColumn" msprop:Generator_UserColumnName="Importe" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Importe2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnImporte2" msprop:Generator_ColumnPropNameInRow="Importe2" msprop:Generator_ColumnPropNameInTable="Importe2Column" msprop:Generator_UserColumnName="Importe2" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
