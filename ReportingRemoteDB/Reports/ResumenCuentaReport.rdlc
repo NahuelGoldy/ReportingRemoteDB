@@ -305,7 +305,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.62646cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -348,7 +348,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.44125cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -360,7 +360,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=FormatDateTime(Fields!fecha.Value, Microsoft.VisualBasic.DateFormat.ShortDate)</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -374,9 +376,9 @@
                               <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -391,7 +393,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>="XXX - 0000-00000000"</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -405,9 +409,9 @@
                               <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -423,6 +427,7 @@
                                 <TextRun>
                                   <Value>=Fields!debe.Value</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <Format>#,0.00'$';(#,0.00'$')</Format>
                                   </Style>
                                 </TextRun>
@@ -438,9 +443,9 @@
                               <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                             <rd:FormatSymbolCulture>es-AR</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
@@ -457,6 +462,7 @@
                                 <TextRun>
                                   <Value>=Fields!Haber.Value</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <Format>#,0.00'$';(#,0.00'$')</Format>
                                   </Style>
                                 </TextRun>
@@ -472,9 +478,9 @@
                               <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                             <rd:FormatSymbolCulture>es-AR</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
@@ -491,6 +497,7 @@
                                 <TextRun>
                                   <Value>=IIf((RowNumber(Nothing) = 1), Fields!debe.Value - Fields!Haber.Value, (RunningValue(Fields!debe.Value, Sum, "Cuenta") - RunningValue(Fields!Haber.Value, Sum, "Cuenta")))</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <Format>#,0.00'$'</Format>
                                   </Style>
                                 </TextRun>
@@ -506,9 +513,9 @@
                               <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                             <rd:FormatSymbolCulture>es-AR</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
@@ -701,7 +708,7 @@
             <DataSetName>OLAPcontable</DataSetName>
             <Top>4.2037cm</Top>
             <Left>0cm</Left>
-            <Height>2.4cm</Height>
+            <Height>2.26771cm</Height>
             <Width>16.9418cm</Width>
             <Style>
               <Border>
@@ -819,6 +826,7 @@
                 <Border>
                   <Style>None</Style>
                 </Border>
+                <VerticalAlign>Middle</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>

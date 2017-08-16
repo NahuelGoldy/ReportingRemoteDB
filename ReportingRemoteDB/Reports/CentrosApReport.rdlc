@@ -219,7 +219,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.6cm</Height>
+                  <Height>0.5cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -231,7 +231,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=IIf(StrComp(Fields!CENPREFI.Value, "A") = 1, "Obras", "Sectores")</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -244,10 +246,11 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Top</VerticalAlign>
                             <PaddingLeft>5pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -262,7 +265,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!CODCEN.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -275,10 +280,11 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Top</VerticalAlign>
                             <PaddingLeft>5pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -293,7 +299,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!NOMBRE.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -306,10 +314,11 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Top</VerticalAlign>
                             <PaddingLeft>5pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -324,7 +333,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=IIf(Fields!ADMNEGOCIOS.Value = 1, "Sí", "No")</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -337,10 +348,11 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Top</VerticalAlign>
                             <PaddingLeft>5pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingRight>1pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
+                            <PaddingBottom>1pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -413,7 +425,7 @@
             </TablixRowHierarchy>
             <DataSetName>CentrosApDataSet</DataSetName>
             <Top>4.7745cm</Top>
-            <Height>1.8cm</Height>
+            <Height>1.7cm</Height>
             <Width>16.93979cm</Width>
             <Style>
               <Border>
@@ -532,6 +544,7 @@
                 <Border>
                   <Style>None</Style>
                 </Border>
+                <VerticalAlign>Middle</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
